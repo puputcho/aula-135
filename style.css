@@ -24,28 +24,28 @@
     z-index: 1000;
     opacity: 1;
     animation-delay: 0s;
-    bottom: 155px;
+    bottom: 205px;
   }
   section .air.air2{
     animation: wave2 15s linear infinite;
     z-index: 999;
     opacity: 0.5;
     animation-delay: -5s;
-    bottom: 160px;
+    bottom: 210px;
   }
   section .air.air3{
     animation: wave 30s linear infinite;
     z-index: 998;
     opacity: 0.2;
     animation-delay: -2s;
-    bottom: 165px;
+    bottom: 215px;
   }
   section .air.air4{
     animation: wave2 5s linear infinite;
     z-index: 997;
     opacity: 0.7;
     animation-delay: -5s;
-    bottom: 170px;
+    bottom: 220px;
   }
   @keyframes wave{
     0%{
