@@ -12,14 +12,17 @@ function setup() {
 
 function draw() {
     image(video, 0, 0);
+
     if (statusModelo != '') {
         detectorObjetos.detect(video, gotResult)
-        x = 100
-        y = 100
-        h = 200
-        w = 100
+        for(i = 0; i < objetos.length ; i++){
+        
+        x = objetos[i].x
+        y = objetos[i].y
+        h = objetos[i].height
+        w = objetos[i].width
         s = 15
-        t = 'Olá'
+        t = objetos[i].label
         fill('red')
         noFill()
         stroke('red')
@@ -27,6 +30,8 @@ function draw() {
         textSize(s)
         fill('red')
         text(t, x, y - 5)
+
+        }
         document.getElementById('status').innerHTML = 'Objetos detectados.'
         document.getElementById('Numerobjetos').innerHTML = objetos.length + ' objetos detectados'
     }
