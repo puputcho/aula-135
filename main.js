@@ -28,7 +28,7 @@ function draw() {
         fill('red')
         text(t, x, y - 5)
         document.getElementById('status').innerHTML = 'Objetos detectados.'
-        document.getElementById('Numerobjetos').innerHTML = objetos.lenght + ' objetos detectados'
+        document.getElementById('Numerobjetos').innerHTML = objetos.length + ' objetos detectados'
     }
 }
 
